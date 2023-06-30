@@ -1,10 +1,7 @@
 import {describe, expect, it} from 'vitest';
-import { Character } from './Character';
-import { Elf } from './Elf';
-import { Orc } from './Orc';
 
 describe('Character', () => {
-  it('should have strength, dexterity and intelligence', () => {
+  it.only('should have strength, dexterity and intelligence', () => {
     const isaac = new Character(5, 6, 7);
     expect(isaac.strength).toBe(5);
     expect(isaac.dexterity).toBe(6);
